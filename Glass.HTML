@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Jockey+One&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Jockey+One&family=Unica+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<style>
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+main{
+min-height: 100vh;
+ background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+align-items: center;
+justify-content: center;
+display: flex;
+}
+.user{
+width: 300px;
+height: 150px;
+background: linear-gradient(to right bottom,rgba(255,255,255,0.6),rgb(132,217, 221,0.1));
+border-top-left-radius: 25px;
+}
+.glass{
+
+background:white ;
+min-height: 94vh;
+width: 60%;
+background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+border-radius: 25px;
+z-index: 2;
+backdrop-filter: blur(2rem);
+position: relative;
+display: flex;
+}
+.circle1{
+background-color:white;
+background: linear-gradient(to right bottom,rgba(255,255,255,0.9),rgba(255,255,255,0.1));
+height: 150px;
+width: 150px;
+position: absolute;
+top: 78%;
+right: 15%;
+border-radius: 50%;
+}
+.circle2{
+  background-color:white;
+background: linear-gradient(to right bottom,rgba(255,255,255,0.9),rgba(255,255,255,0.1));
+height: 150px;
+width: 150px;
+position: absolute;
+top: 5%;
+left: 15%;
+border-radius: 50%;
+}
+.square{
+right: 15%;
+top: 5%;
+height: 220px;
+width: 220px;
+background-color: tomato;
+position: absolute;
+background:linear-gradient(to right,red,rgb(196, 196, 31));
+border-radius: 50%;
+
+}
+.userpng{
+  width: 70px;
+height: 70px;
+box-shadow: 2px black;}
+.links{
+width: 300px;
+background: linear-gradient(to right bottom,rgba(255,255,255,0.6),rgb(132,217, 221,0.1));
+border-bottom-left-radius: 25px;
+
+}
+.dashboard{
+border-top-right-radius: 25px;
+border-top-left-radius: 25px;
+
+width: 300px;
+height:150px;
+}
+
+h3{
+  font-family: 'Manrope', sans-serif;
+  font-size: 20px;
+ margin-left: 50px;
+color: rgb(153, 204, 255);
+}
+h2{
+font-family: 'Oswald', sans-serif;
+font-size: 20px;
+float: right;
+margin-right: 35%;
+margin-top: 25px;
+color: rgb(0, 204, 255);
+}
+p{
+font-family: 'Manrope', sans-serif;
+font-size:15px;
+color: crimson;
+margin-left: 16%;
+}
+img{
+margin-left: 3rem;
+margin-top: 20px;
+width: 50px;
+height: 50px;
+}
+.pro{
+top: 2%;
+
+width: 300px;
+height: 235px;
+background: linear-gradient(to right,rgba(132, 195, 221,0.9),rgba(132, 219, 221,0.1));
+border-bottom-left-radius: 25px;
+backdrop-filter: blurr(100rem,black);
+animation-name:zomm;
+animation-duration: 5s;
+animation-iteration-count:infinite;
+animation-delay: 0.3s;
+}
+.status{
+margin: 50px 0px 0px 50px;
+width: 300px;
+height: 80px;
+line-height: 40px;
+
+}
+
+#lab{
+width: 150px;
+font-size: 40px;
+height: 15px;
+font-family: 'Oswald', sans-serif;
+margin-left: 58%;
+padding-top: 10%;
+}
+.state{
+font-size: 30px;
+font-family: 'Lexend Mega', sans-serif;
+color: rgba(137, 165, 204);
+}
+@keyframes zomm {
+  from{background: linear-gradient(to right,rgba(132, 195, 221,0.9),rgba(132, 219, 221,0.1));}
+  to{ background: linear-gradient(to left bottom,rgba(153, 255, 51,0.1),rgba(0, 204, 0,0.9)); }
+}
+#joystick{
+width: 130px;
+height: 90px;
+margin-left: 5%;
+margin-right: 5%;
+margin-top: 6%;
+}
+
+.cards{
+margin-left: 39px;
+margin-top: 17%;
+position: relative;
+}
+.card{
+background: linear-gradient(to right bottom, rgb(243, 245, 245),rgba(192, 211, 224, 0.342));
+box-shadow: 1px 1px 3px black;
+border-radius: 16px;
+position: relative;
+width: 30rem;
+height: 100px;
+margin: 25px 0px 0px 10px;
+display: flex;
+}
+.cinfo{
+width: 300px;
+height: 50px;
+line-height: 30px;
+}
+.percentage{
+margin-top: 5px;
+position: absolute;
+border: 3px yellow;
+background: linear-gradient(to right,  #9c9e9f 0%,#9c9e9f 50%,#33ccff 50%,#33ccff 100%);
+width: 200px;
+height: 20px;
+top: 60%;
+left: 30%;
+border-radius: 30px;
+}
+.games{
+width: 500px;
+height: 250px;
+}
+input{
+  border-radius: 15px;
+background-color: rgba(187, 198, 207,0.6);
+width: 250px;
+height: 25px;
+
+}
+#gname{
+padding-top: 5px;
+font-family: 'Bebas Neue', cursive;
+font-size: 25px;
+color: rgba(255, 153, 255,0.7);
+}
+.desp{
+font-family: 'Bebas Neue', cursive;
+
+
+}
+
+</style>
+</head>
+<body>
+  <main>
+<section class="glass">
+<div class="dashboard">
+  <div class="user">
+    <img class="userpng" src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png" alt="">
+  <h3>CHAGAN RAM</h3>
+  <p>Pro Member</p>
+  </div>
+<div class="links">
+  <div class="link">
+    <img src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png" alt="">
+  <h2>Streams</h2>
+  </div>
+  <div class="link">
+    <img src="https://i0.wp.com/freepngimages.com/wp-content/uploads/2019/06/gaming-controller.png?fit=1000%2C778" alt="">
+  <h2>Games</h2>
+  </div>
+  <div class="link">
+    <img src="https://acoe.annauniv.edu/images/new.png" alt="">
+  <h2>New</h2>
+  </div>
+  <div class="link">
+    <img src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png" alt="">
+  <h2>Library</h2>
+</div></div>
+<div class="pro">
+	<h1 id="lab">Join Pro For Free Games</h1>
+<img  id="joystick" src="https://media3.giphy.com/media/XdVtHfyfiJcIxcecpk/source.gif" alt="">
+</div></div>
+<div class="games">
+  <div class="status">
+    <h1 class="state">ACTIVE GAMES</h1>
+    <input type="text" name="" value="">
+  </div>
+<div class="cards">
+<div class="card">
+<img src="https://d.newsweek.com/en/full/1585856/assassins-creed-valhalla-crest-logo.jpg?w=1600&h=1600&q=88&f=8a979ef6d4d00bb549c4e63b558b9bd0" alt="">
+<div class="cinfo">
+<p id="gname">Assassin's Creed Valhalla</p>
+<p id="desp">PS5 Version</p>
+</div>
+<div class="percentage"></div></div>
+<div class="card">
+  <img src="https://lh3.googleusercontent.com/proxy/c2P3IXAsO3pnpKD0O6yJSMKjwqXnz5VTcg_twMiopNplVDc-gcViHctsEbYEO_2tqt7YWPJGGPg9EU4VX8gOcnkQ0iSaVE8FOe3E9GCZCga8tbpwQsyzRce12kJ9DILQR7Bm" alt="">
+  <div class="cinfo">
+  <p id="gname">GTA V</p>
+  <p id="desp">PC Version</p>
+  </div>
+  <div class="percentage"></div>
+  </div>
+  <div class="card">
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7529fe10-37db-4bc5-8d36-afeeaf4078d3/ddat0p9-1bd72a1a-939b-4ff2-adbc-2d6a5daf9c64.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNzUyOWZlMTAtMzdkYi00YmM1LThkMzYtYWZlZWFmNDA3OGQzXC9kZGF0MHA5LTFiZDcyYTFhLTkzOWItNGZmMi1hZGJjLTJkNmE1ZGFmOWM2NC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.UYjAANGYUdZ1PsHWQ1rT_8mJhvg8VIxCLKDfDvybjzA" alt="">
+    <div class="cinfo">
+    <p id="gname">CYBERPUNK 2077</p>
+    <p id="desp">PC Version</p>
+    </div>
+    <div class="percentage"></div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+</section>
+</main>
+<div class="circle1"></div>
+<div class="circle2"></div>
+<div class="square"></div>
+</body>
+</html>
